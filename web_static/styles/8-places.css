@@ -1,0 +1,176 @@
+.places {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.filters {
+
+}
+
+.place-container {
+    display: flex;
+    justify-content: center;
+}
+
+.suite-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.places h1 {
+    font-size: 30px;
+    margin-right: 75%;
+    margin-left: -10%;
+    margin-bottom: 0;
+}
+
+
+article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    position: relative;
+}
+
+article h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+
+.price_by_night {
+    color: #FF5A5F;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    margin: -19% 0 0 0;
+    border: #FF5A5F solid 3px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    height: 80px;
+    border-top: #DDDDDD solid 1px;
+    border-bottom: #DDDDDD solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0 0 0;
+}
+
+.max_guest {
+    background-image: url("../images/icon_group.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.number_rooms {
+    width: 100px;
+    background-image: url("../images/icon_bed.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.number_bathrooms {
+    background-image: url("../images/icon_bath.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.number_bathrooms p, .number_rooms p, .max_guest p {
+    margin-top: 50%;
+    text-align: center;
+}
+
+.user {
+    margin: 5% 0 0 0;
+}
+
+.description {
+    margin: -3% 0 0 0;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: white;
+    color: #484848;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    position: static;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilos para los filtros de States y Amenities sacamos trasparencia */
+.locations .popover,
+.amenities .popover {
+    background-color: #FAFAFA; /* Fondo del popover */
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    margin-top: 2%; /* espacio desde donde se abre */
+    padding-top: 0%; /* espacio de arriba */
+    padding-bottom: 2%; /* espacio de abajo */
+    visibility: hidden; /* Ocultamos el popover por defecto */
+    position: absolute;
+    width: 180px;
+    z-index: 1;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    visibility: visible; /* Mostramos el popover al hacer hover */
+}
+
+.locations .popover ul,
+.amenities .popover ul {
+    list-style: none;
+    padding-left: 15%;
+    margin-top: -10%; /* Ajustamos el valor de margin-top */
+}
+
+.locations .popover li,
+.amenities .popover li {
+    margin-left: -5%;
+    margin-top: 5%;
+}
+
+.amenities .popover li:first-child {
+    padding-top: 10%;
+}
